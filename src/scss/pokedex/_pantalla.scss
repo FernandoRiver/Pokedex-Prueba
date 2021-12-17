@@ -1,0 +1,30 @@
+.pantalla{
+    background-color: $pantalla;
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    -webkit-box-shadow: inset 0px 2px 11px -2px #000000; 
+    box-shadow: inset 0px 2px 11px -2px #000000;
+}
+.pantalla h1{
+    margin: 0;
+}
+.pokemon{
+    margin: 0 auto;
+    height: 100%;
+}
+
+.shiny{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+
+    font-size: 2.5rem;
+    color: $amarillo;
+}

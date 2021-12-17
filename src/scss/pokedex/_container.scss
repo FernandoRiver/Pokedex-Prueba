@@ -1,0 +1,80 @@
+.pokedex-container{
+    background-color: $base_1;
+    width: 50%;
+    height: 95vh;
+    margin: 0 auto;
+    padding: 5% 0;
+
+    border-radius: 2rem;
+
+    -webkit-box-shadow: 0px 7px 20px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 7px 20px 1px rgba(0,0,0,1);
+    box-shadow: 0px 7px 20px 1px rgba(0,0,0,1);
+    
+
+}
+@media (max-width: 1020px) {
+    .pokedex-container{
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    .pokedex-container{
+        height: auto;
+    }
+}
+
+.menu{
+    // position: relative;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+.line_1, .line_2, .line_3{
+    position: absolute;
+    background-color: $base_1;
+    width: 100%;
+    height: 2px;
+    margin: 1rem 0;
+    transition: all ease 0.5s
+}
+.line_2{
+    top: 1rem;
+}
+.line_3{
+    top: 2rem;
+}
+
+.menu-select{
+    .menu{top:3rem;}
+    .line_1{
+        transform: rotate(45deg);
+    }
+    .line_2{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .line_3{
+        display: none;
+    }
+}
+
+.menu-items{
+    background-color: $base_1;
+    width: 10rem;
+    height: 20rem;
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
+    padding: 1rem;
+    & .show{
+        color: white;
+        
+    }
+}

@@ -1,0 +1,33 @@
+.grass,.poison,.fire,.normal,.water,
+.electric,.ice,.fighting,.ground,.flying,
+.psychic,.bug,.rock,.ghost,.dragon,.dark,.steel,.fairy{
+    background-color: $pantalla;
+    width: 5.5rem;
+    color: black;
+    padding: 0.1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+.grass {background-color: #81B622;}
+.poison{background-color: #BF3880;}
+.fire{background-color: $base_2; color: $pantalla;}
+.normal{background-color: gray; color: $pantalla;}
+.water{background-color: #0db1f2; color: $negro;}
+.electric{background-color: #F8D210; color: $negro;}
+.ice{background-color: #2FF3E0; color: $negro;}
+.fighting{background-color: #fe4001; color: $pantalla;}
+.ground{background-color: #c2660f; color: $pantalla;}
+.flying{background-color: #6DECE0; color: $negro;}
+.psychic{background-color: #780024; color: $pantalla;}
+.bug{background-color: #318821; color: $pantalla;}
+.rock{background-color: #694300; color: $pantalla;}
+.ghost{background-color: #a03f8f; color: $pantalla;}
+.dragon{background-color: #4f00c2; color: $pantalla;}
+.dark{background-color: #3a2d29; color: $pantalla;}
+.steel{background-color: #BFC7C8; color: $negro;}
+.fairy{background-color: #f49adb; color: $negro;}

@@ -1,0 +1,169 @@
+.controles{
+    margin: 5rem auto;
+    width: 95%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+@media (max-width: 600px) {
+    .controles{
+        margin: 2.5rem auto;
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+// Shiny Botton
+@media (max-width: 600px) {
+    .change-control{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+.shiny-botton{
+    background-color: $boton;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: $fuenteSecundaria;
+    -webkit-box-shadow: 0px 3px 4px -1px #000000; 
+    box-shadow: 0px 3px 4px -1px #000000;
+    transition: all ease 0.1s;
+    &:hover{
+        cursor: pointer;
+        color: $pantalla;
+    }
+    &:active{
+        font-size: 1.7rem;
+        -webkit-box-shadow: 0px 0px 0px 0px #000000; 
+        box-shadow: 0px 0px 0px 0px #000000;
+    }
+}
+.rnd-pokemon{
+    background-color: $rndBotton;
+    width: 50%;
+    height: 3rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all ease 0.1s;
+    // color: $pantalla;
+    -webkit-box-shadow: 0px 3px 4px -1px #000000; 
+    box-shadow: 0px 3px 4px -1px #000000;
+
+    &:hover{
+        cursor: pointer;
+        color: $pantalla;
+    }
+    &:active{
+        font-size: 0.8rem;
+        -webkit-box-shadow: 0px 0px 0px 0px #000000; 
+        box-shadow: 0px 0px 0px 0px #000000;
+    }
+}
+
+
+// Arrow Control
+
+.arrowControl{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.right,.left,.up,.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $negro;
+    margin: 0    auto;
+    width: 25%;
+    font-size: 1.5rem;
+    color: $pantalla;
+    border-radius: 0.2rem;
+    transition: all ease 0.1s;
+
+    -webkit-box-shadow: 0px 3px 4px -1px #000000; 
+    box-shadow: 0px 3px 4px -1px #000000;
+
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        font-size: 1rem;
+        -webkit-box-shadow: 0px 0px 0px 0px #000000; 
+        box-shadow: 0px 0px 0px 0px #000000;
+    }
+}
+.up,.down{
+    height: 25%;
+}
+.right,.left{
+    height: 100%;
+}
+
+.centralArrows{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+
+
+// Pokemon Name
+
+.pokemon-name{
+    background-color: $pantalla_data;
+    width: 60%;
+    height: 80%;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+
+    -webkit-box-shadow: inset 0px 2px 11px -2px #000000; 
+    box-shadow: inset 0px 2px 11px -2px #000000;
+}
+@media (max-width: 600px) {
+    .pokemon-name{
+        height: 20rem;
+    }
+    .pokemon-data{
+        flex-direction: row;
+    }
+}
+
+.pokemon-data{
+    color: $negro;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-family: $fuenteTercera;
+    & p{
+        font-weight: 900;
+    }
+}
+.poke-name{
+    color: $pantalla;
+}
+@media (max-width: 600px) {
+    .pokemon-data{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+}
